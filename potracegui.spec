@@ -12,6 +12,7 @@ URL:		http://potracegui.sourceforge.net/
 BuildRequires:	artsc-devel
 BuildRequires:	kdelibs-devel >= 3.0.0
 Buildrequires:	qt-devel >= 3.0.0
+BuildRequires:	rpmbuild(macros) >= 1.129
 Requires:	potrace
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
