@@ -7,7 +7,6 @@ License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/potracegui/%{name}-%{version}.tar.bz2
 # Source0-md5:	45097e02397a64271ec3bb0e1625a3a9
-# Source0-size:	517143
 Source1:	%{name}.desktop
 URL:		http://potracegui.sourceforge.net/
 BuildRequires:	artsc-devel
