@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/potracegui/%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop
 URL:		http://potracegui.sourceforge.net/
 BuildRequires:	artsc-devel
+BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 3.0.0
 Buildrequires:	qt-devel >= 3.0.0
 BuildRequires:	rpmbuild(macros) >= 1.129
@@ -29,8 +30,8 @@ opcjami.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.* admin
 %configure
-
 %{__make}
 
 %install
