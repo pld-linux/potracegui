@@ -1,5 +1,5 @@
 Summary:	GUI interface for potrace
-Summary(pl):	Interfejs GUI dla potrace
+Summary(pl):	Graficzny interfejs dla potrace
 Name:		potracegui
 Version:	0.2
 Release:	2
@@ -8,12 +8,10 @@ Group:		X11/Applications/Graphics
 Source0:	http://potracegui.sourceforge.net/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	6a770a6c6c706f17df64223d8c943bac
 Source1:	%{name}.desktop
-URL:		http://potracegui.sourceforge.net
+URL:		http://potracegui.sourceforge.net/
 BuildRequires:	artsc-devel
-BuildRequires:	autoconf >= 2.59
-BuildRequires:	automake >= 1.7
-BuildRequires:	kdelibs-devel
-Buildrequires:	qt-devel
+BuildRequires:	kdelibs-devel >= 3.0.0
+Buildrequires:	qt-devel >= 3.0.0
 Requires:	potrace
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,15 +20,14 @@ An GUI interface for potrace. It collects informations in an easy way
 and then it launches potrace with all the relevant options.
 
 %description -l pl
-Interfejs GUI dla potrace pobieraj±cy w prosty sposób informacje a
-nastêpnie uruchamiaj±cy potrace z odpowiednimi opcjami.
+Graficzny interfejs u¿ytkownika dla potrace pobieraj±cy w prosty
+sposób informacje, a nastêpnie uruchamiaj±cy potrace z odpowiednimi
+opcjami.
 
 %prep
 %setup -q
 
 %build
-%{__aclocal}
-%{__autoconf}
 %configure
 
 %{__make}
@@ -40,17 +37,20 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_htmldir=%{_kdedocdir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+
+%find_lang %{name} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS README
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/apps/*
+%{_datadir}/apps/potracegui
 %{_desktopdir}/%{name}.desktop
-%{_iconsdir}/*
+%{_iconsdir}/hicolor/*/apps/*.png
