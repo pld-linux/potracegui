@@ -5,7 +5,7 @@ Version:	1.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	http://osdn.dl.sourceforge.net/potracegui/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/potracegui/%{name}-%{version}.tar.bz2
 # Source0-md5:	5d4db03321e4abd6337e7f38389685a3
 Source1:	%{name}.desktop
 URL:		http://potracegui.sourceforge.net/
