@@ -9,8 +9,10 @@ Source0:	http://potracegui.sourceforge.net/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	6a770a6c6c706f17df64223d8c943bac
 Source1:	%{name}.desktop
 URL:		http://potracegui.sourceforge.net
+BuildRequires:	artsc-devel
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1.7
+BuildRequires:	kdelibs-devel
 Buildrequires:	qt-devel
 Requires:	potrace 
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
