@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PotraceGui
+Comment=Interface for potrace
+Comment[pl]=Interfejs dla potrace
+Exec=potracegui
+Icon=potracegui
+Terminal=false
+Type=Application
+Encoding=UTF-8
