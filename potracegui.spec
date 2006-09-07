@@ -1,12 +1,12 @@
 Summary:	GUI interface for potrace
 Summary(pl):	Graficzny interfejs dla potrace
 Name:		potracegui
-Version:	1.2
+Version:	1.3.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://dl.sourceforge.net/potracegui/%{name}-%{version}.tar.bz2
-# Source0-md5:	5d4db03321e4abd6337e7f38389685a3
+# Source0-md5:	2685f462e199804573329edf5373c328
 Source1:	%{name}.desktop
 URL:		http://potracegui.sourceforge.net/
 BuildRequires:	artsc-devel
