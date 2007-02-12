@@ -1,5 +1,5 @@
 Summary:	GUI interface for potrace
-Summary(pl):	Graficzny interfejs dla potrace
+Summary(pl.UTF-8):   Graficzny interfejs dla potrace
 Name:		potracegui
 Version:	1.3.2
 Release:	1
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 An GUI interface for potrace. It collects informations in an easy way
 and then it launches potrace with all the relevant options.
 
-%description -l pl
-Graficzny interfejs u¿ytkownika dla potrace pobieraj±cy w prosty
-sposób informacje, a nastêpnie uruchamiaj±cy potrace z odpowiednimi
+%description -l pl.UTF-8
+Graficzny interfejs uÅ¼ytkownika dla potrace pobierajÄ…cy w prosty
+sposÃ³b informacje, a nastÄ™pnie uruchamiajÄ…cy potrace z odpowiednimi
 opcjami.
 
 %prep
