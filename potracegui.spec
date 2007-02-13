@@ -1,5 +1,5 @@
 Summary:	GUI interface for potrace
-Summary(pl.UTF-8):   Graficzny interfejs dla potrace
+Summary(pl.UTF-8):	Graficzny interfejs dla potrace
 Name:		potracegui
 Version:	1.3.2
 Release:	1
