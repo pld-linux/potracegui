@@ -11,8 +11,6 @@ Source1:	%{name}.desktop
 URL:		http://potracegui.sourceforge.net/
 BuildRequires:	artsc-devel
 BuildRequires:	automake
-BuildRequires:	boost-filesystem-devel
-BuildRequires:	boost-regex-devel
 BuildRequires:	kdelibs-devel >= 3.0.0
 BuildRequires:	qt-devel >= 3.0.0
 BuildRequires:	rpmbuild(macros) >= 1.129
