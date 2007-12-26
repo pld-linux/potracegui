@@ -6,6 +6,5 @@ Exec=potracegui
 Icon=potracegui
 Terminal=false
 Type=Application
-Encoding=UTF-8
 Categories=Qt;KDE;Graphics;
 # vi: encoding=utf-8
